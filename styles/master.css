@@ -79,6 +79,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 	background-color: #dedddd;
+	padding-bottom: 40px;
 }
 
 .proyectos h2 {
@@ -97,4 +98,114 @@ body {
 	height: 1px;
 	background-color: #00a9da;
 	border: none;
+	margin-bottom: 40px;
+}
+
+.catalogo {
+	display: flex;
+	width: 80%;
+	justify-content: center;
+}
+
+.arti {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	width: 30%;
+	background-color: #00a9da;
+}
+
+.arti img{
+	width: 80%;
+}
+
+.arti h3 {
+	width: 90%;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+.arti hr {
+	background-color: black;
+	border:none;
+	height: 1px;
+	width: 90%;
+	margin-bottom: 10px;
+}
+
+.arti p{
+	width: 90%;
+	margin-top: 0;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
+	height: 260px;
+}
+
+.izquierda {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.izquierda h2{
+	color: #00a9da;
+	margin:0;
+	font-size: 43px;
+}
+
+.izquierda p{
+	color: grey;
+	margin:0;
+}
+
+.derecha {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.derecha h2{
+	color: #00a9da;
+	margin:0;
+}
+
+.iconos{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.ico{
+	font-size: 60px;
+	color: #00a9da;
+	margin: 5px;
+}
+
+.centro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.centro h2{
+	color: #00a9da;
+	margin:0;
+	margin-bottom: 10px;
+}
+
+.ti {
+	color: #4a4a4a;
+	margin:0; 
+}
+
+.sp {
+	color: grey;
+	margin-top: 0;
+	margin-bottom: 10px;
 }
