@@ -104,7 +104,8 @@ body {
 .catalogo {
 	display: flex;
 	width: 80%;
-	justify-content: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .arti {
@@ -208,4 +209,10 @@ body {
 	color: grey;
 	margin-top: 0;
 	margin-bottom: 10px;
+}
+
+/*hover*/
+
+.lin:hover {
+	color: #00a9da;
 }
