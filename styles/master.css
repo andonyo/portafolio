@@ -249,12 +249,12 @@ body {
 
 /*hover*/
 
-.lin:hover  {
+.li:hover a  {
 	color: white;
 	transition: 0.5s;
 }
 
-.li:hover{
+.li:hover {
 	background-color: #00a9da;
 	margin: 0;
 	transition: 0.5s;
