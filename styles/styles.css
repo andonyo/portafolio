@@ -1,0 +1,336 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.portada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: linear-gradient(to left, #63e0f6, #283eb2);
+    overflow: hidden;
+}
+
+.barra {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.barra figure {
+    margin-left: 0;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.menu {
+	font-size: 20px;
+}
+
+.menu ul {
+    display: inline-block;
+    padding-inline-start: 20px;
+}
+
+.menu li {
+	display: inline-block;
+}
+
+.menu a{
+	color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.list:hover {
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgb(78, 214, 255);
+}
+
+.hambur {
+    display: none;
+}
+
+.contenedor {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    padding-bottom: 10px;
+}
+
+.izq h1{
+    color: white;
+    font-size: 70px;
+    margin: 0;
+}
+
+.izq p {
+    color: rgb(192, 192, 192);
+    font-size: 40px;
+    margin: 0;
+}
+.der img {
+    width: 420px;
+    animation-name: flotar;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+.degrade {
+    display: block;
+    border-bottom: 120px solid white; 
+    border-left: 100vw solid transparent;
+}
+
+.circulo1 {
+    width: 50px;
+    position: absolute;
+    top: -50px;
+    right: 80%;
+
+    animation-name: caer;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+
+.circulo2 {
+    width: 75px;
+    position: absolute;
+    top: -70px;
+    right: 65%;
+
+    animation-name: caer;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 7s;
+}
+
+.circulo3 {
+    width: 35px;
+    position: absolute;
+    top: -50px;
+    right: 50%;
+
+    animation-name: caer;
+    animation-duration: 22s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2.5s;
+}
+
+.cuadrado1 {
+    width: 65px;
+    position: absolute;
+    top: -65px;
+    right: 60%;
+    animation-name: caer;
+    animation-duration: 22s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+}
+
+.cuadrado2 {
+    width: 60px;
+    position: absolute;
+    top: -60px;
+    right: 75%;
+    animation-name: caer;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 5.7s;
+}
+
+.cuadrado3 {
+    width: 20px;
+    position: absolute;
+    top: -60px;
+    right: 90%;
+    animation-name: caer;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.3s;
+}
+
+.mas1 {
+    width: 45px;
+    position: absolute;
+    top: -60px;
+    right: 95%;
+    animation-name: caer;
+    animation-duration: 22s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 4s;
+}
+
+.mas2 {
+    width: 25px;
+    position: absolute;
+    top: -60px;
+    right: 47%;
+    animation-name: caer;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 10s;
+}
+
+.mas3 {
+    width: 50px;
+    position: absolute;
+    top: -60px;
+    right: 55%;
+    animation-name: caer;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.1s;
+}
+
+.menur {
+    background: rgba(54, 90, 194, .8);
+    position: absolute;
+    left: -100%;
+    top: 0;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    transition: .3s;
+}
+
+.menur.active {
+    left: 0;
+}
+
+.menur ul {
+    flex: 1;
+    padding: 0;
+}
+
+.menur li {
+    display: block;
+    margin: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+.menur a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menur li:first-child {
+    border-top: 1px solid white;
+}
+
+@keyframes flotar{  
+	25%{ transform:translateY(10px); }
+    75%{ transform:translateY(-10px); }
+	
+}
+
+@keyframes caer{
+	0%{ transform:translateY(-10px) rotate(45deg); }
+    100%{ transform:translateY(700px) rotate(-45deg); }
+	
+}
+
+@media screen and (max-width: 1000px){
+    .menu {
+        font-size: 17px;
+    }
+
+    .menu ul {
+        padding-inline-start: 10px;
+    }
+
+    .izq h1 {
+        font-size: 40px;
+    }
+
+    .izq p {
+        font-size: 25px;
+    }
+
+    .der img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .contenedor {
+        width: 90vw;
+    }
+
+    .barra {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .formas {
+        display: none;
+    }
+    
+    .portada {
+        background: url('../img/fondo2.png');
+        background-size: cover;
+    }
+
+    .barra {
+        width: 90vw;
+    }
+
+    .contenedor {
+        width: 90vw;
+        padding-top: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .izq {
+        text-align: center;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hambur {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        padding: 15px;
+        border-radius: 50%;
+        box-shadow: 0 0 5px rgb(40, 5, 167);
+        z-index: 3;
+    }
+
+    .hambur a{
+        color: white;
+        font-size: 30px;
+    }
+}
