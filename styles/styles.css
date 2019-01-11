@@ -243,6 +243,76 @@ body {
     border-top: 1px solid white;
 }
 
+.proyectos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.titulo {
+    width: 80vw;
+    text-align: center;
+    font-size: 40px;
+}
+
+.titulo h2 {
+    margin: 0;
+}
+
+.linea {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #63e0f6, #283eb2);
+    margin-bottom: 15px;
+}
+
+.proyects {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.base {
+    width: 49%;
+    box-shadow: 0 0 5px gray;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.foto {
+    width: 50%;
+}
+
+.foto img{
+    width: 80%;
+    margin: 15px;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 5px;
+}
+
+.texto {
+    width: 50%;
+}
+
+.texto h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.texto p {
+    margin-top: 0;
+    margin-right: 15px;
+    text-align: justify;
+}
+
 @keyframes flotar{  
 	25%{ transform:translateY(10px); }
     75%{ transform:translateY(-10px); }
@@ -274,6 +344,35 @@ body {
 
     .der img {
         width: 300px;
+    }
+
+    .base {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .foto {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foto img{
+        margin-bottom: 5px;
+    }
+
+    .texto {
+        width: 100%;
+    }
+
+    .texto h3 {
+        margin-top: 5px;
+        text-align: center;
+    }
+    
+    .texto p {
+        margin-left: 15px;
     }
 }
 
@@ -332,5 +431,11 @@ body {
     .hambur a{
         color: white;
         font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .base {
+        width: 100%;
     }
 }
