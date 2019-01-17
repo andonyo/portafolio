@@ -366,6 +366,11 @@ body {
         width: 100%;
     }
 
+    .texto a{
+        text-decoration: none;
+        color: black;
+    }
+
     .texto h3 {
         margin-top: 5px;
         text-align: center;
