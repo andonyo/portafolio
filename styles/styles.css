@@ -542,3 +542,9 @@ body {
     }
 
 }
+
+@media screen and (max-width: 375px){
+    .titulo h2 {
+        font-size: 32px;
+    }
+}
