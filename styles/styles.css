@@ -107,7 +107,7 @@ body {
 .circulo2 {
     width: 75px;
     position: absolute;
-    top: -70px;
+    top: -80px;
     right: 65%;
 
     animation-name: caer;
@@ -246,9 +246,35 @@ body {
 .proyectos {
     display: flex;
     align-items: center;
+    justify-content: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
+    /*transform: translateX(-100%);*/
+}
+
+.ambos {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.proyec {
+    position: absolute;
+    transition: .5s;
+    transition-delay: 0.3s;
+}
+
+.proyec.activo {
+    transform: translateX(-100%);
+}
+
+.proyec, .habilidad {
+    width: 100%;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+    background: white;
 }
 
 .titulo {
@@ -271,7 +297,7 @@ body {
 .proyects {
     width: 80vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
@@ -302,6 +328,11 @@ body {
     width: 50%;
 }
 
+.texto a{
+    text-decoration: none;
+    color: black;
+}
+
 .texto h3 {
     font-size: 25px;
     margin-bottom: 5px;
@@ -311,6 +342,47 @@ body {
     margin-top: 0;
     margin-right: 15px;
     text-align: justify;
+}
+
+.habi {
+    width: 25%;
+    height: 160px;
+    box-shadow: 0 0 5px gray;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px 35px 15px;
+}
+
+.habi-foto {
+    width: 50%;
+}
+
+.habi-foto img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.pie {
+    height: 280px;
+    overflow: hidden;
+}
+
+.footer {
+    background: url('../img/fondo2.png');
+    background-size: cover; 
+    width: 100%;
+    height: 400px;
+    transform: skew(0, -4deg) translateY(60px);
+    text-align: center;
+}
+
+.footer p {
+    padding-top: 80px;
+    transform: skew(0, 4deg);
+    color: white;
+    font-size: 30px;
 }
 
 @keyframes flotar{  
@@ -347,6 +419,7 @@ body {
     }
 
     .base {
+        height: 360px;
         flex-wrap: wrap;
         flex-direction: row;
     }
@@ -366,11 +439,6 @@ body {
         width: 100%;
     }
 
-    .texto a{
-        text-decoration: none;
-        color: black;
-    }
-
     .texto h3 {
         margin-top: 5px;
         text-align: center;
@@ -379,27 +447,13 @@ body {
     .texto p {
         margin-left: 15px;
     }
-}
 
-.pie {
-    height: 280px;
-    overflow: hidden;
-}
+    .habi {
+        width: 35%;
+        height: 150px;
+        margin-bottom: 34px;
+    }
 
-.footer {
-    background: url('../img/fondo2.png');
-    background-size: cover; 
-    width: 100%;
-    height: 400px;
-    transform: skew(0, -4deg) translateY(60px);
-    text-align: center;
-}
-
-.footer p {
-    padding-top: 80px;
-    transform: skew(0, 4deg);
-    color: white;
-    font-size: 30px;
 }
 
 @media screen and (max-width: 860px){
@@ -410,6 +464,13 @@ body {
     .barra {
         width: 90vw;
     }
+
+    .habi {
+        width: 45%;
+        height: 150px;
+        margin-bottom: 34px;
+    }
+
 }
 
 @media screen and (max-width: 760px){
@@ -424,6 +485,17 @@ body {
 
     .barra {
         width: 90vw;
+    }
+
+    .base {
+        width: 80%;
+        height: 400px;
+    }
+
+    .habi {
+        width: 55%;
+        height: 175px;
+        margin-bottom: 15px;
     }
 
     .contenedor {
@@ -464,4 +536,9 @@ body {
     .base {
         width: 100%;
     }
+
+    .habi {
+        width: 70%;
+    }
+
 }
