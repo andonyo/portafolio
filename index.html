@@ -22,13 +22,13 @@
                         <ul><li><a class="list" href="index.html">Inicio</a></li>
                         <li><a class="list" id="habilida" href="#habil">Habilidades</a></li>
                         <li><a class="list" id="proyec" href="#proyectos">Proyectos</a></li>
-                        <li><a class="list" href="index.html">Contactame</a></li></ul>
+                        <li><a class="list" id="contacto" href="#">Contactame</a></li></ul>
                 </nav>
                 <nav class="menu" >
                     <ul><li><a class="list" href="index.html">Inicio</a></li></ul>
                     <ul><li><a class="list" id="habilidad" href="#habil">Habilidades</a></li></ul>
                     <ul><li><a class="list" id="proyect" href="#proyectos">Proyectos</a></li></ul>
-                    <ul><li><a class="list" href="index.html">Contactame</a></li></ul>
+                    <ul><li><a class="list" id="contac" href="#">Contactame</a></li></ul>
                 </nav>
                 <div class="hambur"><a id="burguer-button"><i class="fas fa-bars"></i></a></div>
             </div>
@@ -36,9 +36,16 @@
                 <div class="izq">
                     <h1>Andony Orellana</h1>
                     <p>Desarrollador Web</p>
+                    <div id="iconos" class="contac">
+                        <a href="tel:+50250169318"><i class="icon fas fa-mobile-alt"></i></a>
+                        <a href="mailto:andonyorellana1@gmail.com"><i class="icon far fa-envelope"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/andony.XD"><i class="icon fab fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://github.com/andonyo"><i class="icon fab fa-github"></i></a>
+                    </div>
                 </div>
                 <div class="der">
-                    <img src="img/laptop.png" alt="laptop">
+                    <img class="der-imag" id="laptop" src="img/laptop.png" alt="laptop">
+                    <img class="yo" id="yo" src="img/temp.png" alt="Andony">
                 </div>
             </div>
         </header>
@@ -209,6 +216,11 @@
             const $proyect = document.getElementById('proyect')
             const $habilida = document.getElementById('habilida')
             const $proyec = document.getElementById('proyec')
+            const $contac = document.getElementById('contac')
+            const $contacto = document.getElementById('contacto')
+            const $yo = document.getElementById('yo')
+            const $laptop = document.getElementById('laptop')
+            const $iconos = document.getElementById('iconos')
 
             $habilidad.addEventListener('click', (event) => {
             $proyectos.classList.add('activo');
@@ -225,6 +237,19 @@
 
             $proyec.addEventListener('click', (event) => {
             $proyectos.classList.remove('activo');
+            $menu.classList.toggle('active');
+            } )
+
+            $contac.addEventListener('click', (event) => {
+            $yo.classList.add('activa');
+            $laptop.classList.add('no');
+            $iconos.classList.add('si');
+            } )
+
+            $contacto.addEventListener('click', (event) => {
+            $yo.classList.add('activa');
+            $laptop.classList.add('no');
+            $iconos.classList.add('si');
             $menu.classList.toggle('active');
             } )
       

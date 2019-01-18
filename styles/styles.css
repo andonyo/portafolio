@@ -77,12 +77,57 @@ body {
     font-size: 40px;
     margin: 0;
 }
-.der img {
+
+.contac {
+    transition: 0.5s;
+    transform: scale(0);
+}
+
+.icon {
+    color: white;
+    background: rgb(65, 72, 107);
+    border-radius: 50%;
+    padding: 10px;
+    height: 30px;
+    width: 30px !important;
+}
+
+.contac.si {
+    animation-delay: 2s;
+    transform: scale(1);
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    background: rgb(36, 40, 59);
+}
+
+.der-imag {
     width: 420px;
     animation-name: flotar;
     animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
+}
+
+.der-imag.no {
+    opacity: 0;
+}
+
+.yo {
+    border-radius: 50%;
+    width: 300px;
+    position: absolute;
+    top: 150px;
+    left: 63%;
+    border: 10px solid white;
+    box-shadow: 0 0 10px grey;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.yo.activa {
+    opacity: 1;
 }
 
 .degrade {
@@ -425,6 +470,11 @@ body {
         width: 300px;
     }
 
+    .yo{
+        width: 200px !important;
+        top: 150px;
+    }
+
     .base {
         height: 360px;
         flex-wrap: wrap;
@@ -536,6 +586,14 @@ body {
     .hambur a{
         color: white;
         font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 706px){
+    .yo{
+        width: 250px;
+        top: 290px;
+        left: calc(50% - 115px);
     }
 }
 
