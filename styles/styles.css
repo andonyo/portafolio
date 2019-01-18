@@ -397,6 +397,13 @@ body {
 	
 }
 
+@media screen and (min-width: 1180px){
+    .base {
+        margin-bottom: 40px;
+        height: 250px;
+    }
+}
+
 @media screen and (max-width: 1000px){
     .menu {
         font-size: 17px;
