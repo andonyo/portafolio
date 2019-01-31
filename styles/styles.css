@@ -120,7 +120,7 @@ body {
     position: absolute;
     top: 150px;
     left: 63%;
-    border: 10px solid white;
+    border: 10px solid #ffffff87;
     box-shadow: 0 0 10px grey;
     opacity: 0;
     transition: 0.5s;
@@ -611,5 +611,9 @@ body {
 @media screen and (max-width: 375px){
     .titulo h2 {
         font-size: 32px;
+    }
+
+    .yo {
+        top: 330px;
     }
 }
