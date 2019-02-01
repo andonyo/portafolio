@@ -22,6 +22,8 @@ function toggleMenu(){
 
 const $inici = document.getElementById('inici')
 const $inicio = document.getElementById('inicio')
+const $habilida = document.getElementById('habilida')
+const $proyec = document.getElementById('proyec')
 const $contac = document.getElementById('contac')
 const $contacto = document.getElementById('contacto')
 const $yo = document.getElementById('yo')
@@ -52,4 +54,12 @@ $inicio.addEventListener('click', (event) => {
     $yo.classList.remove('activa');
     $laptop.classList.remove('no');
     $iconos.classList.remove('si');
+} )
+
+$habilida.addEventListener('click', (event) => {
+    $menu.classList.toggle('active');
+} )
+
+$proyec.addEventListener('click', (event) => {
+$menu.classList.toggle('active');
 } )
