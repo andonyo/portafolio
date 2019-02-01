@@ -48,12 +48,6 @@ body {
     transition: .5s;
 }
 
-.list:hover {
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 0 0 2px rgb(78, 214, 255);
-}
-
 .hambur {
     display: none;
 }
@@ -112,6 +106,11 @@ body {
 
 .der-imag.no {
     opacity: 0;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
 }
 
 .yo {
@@ -288,130 +287,125 @@ body {
     border-top: 1px solid white;
 }
 
-.proyectos {
-    display: flex;
-    align-items: center;
-    justify-content: initial;
-    flex-wrap: wrap;
-    flex-direction: row;
-    overflow: hidden;
-    /*transform: translateX(-100%);*/
-}
-
 .ambos {
     width: 100%;
     margin-bottom: 10px;
 }
 
-.proyec {
-    position: absolute;
-    transition: .5s;
-    transition-delay: 0.3s;
+.portafolio {
+    padding: 30px 0; 
 }
 
-.proyec.activo {
-    transform: translateX(-100%);
-}
-
-.proyec, .habilidad {
+.todo-porta {
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
+    padding-bottom: 10px;
     flex-wrap: wrap;
     flex-direction: row;
-    background: white;
 }
 
-.titulo {
-    width: 80vw;
-    text-align: center;
-    font-size: 40px;
+.texto-porta {
+    width: 35%;
+    text-align: initial;
 }
 
-.titulo h2 {
+.texto-porta h3 {
+    color: #4185d0;
+    margin:0 0 5px 0;
+    font-size: 45px;
+}
+
+.texto-porta p {
+    color: #89898a;
     margin: 0;
 }
 
-.linea {
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to left, #63e0f6, #283eb2);
-    margin-bottom: 15px;
+.texto-porta ul {
+    padding: 0  0 0 20px;
+    list-style: url("../img/check.png");
 }
 
-.proyects {
-    width: 80vw;
+.texto-porta ul li p {
+    color: #484848;
+}
+
+.img-porta {
+    width: 45%;
+    text-align: center;
+}
+
+.img-porta img {
+    width: 90%;
+}
+
+.habilidades {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: #eeeeee;
+    overflow: hidden;
+}
+
+.triangulo {
+    width: 100%;
+    display: block;
+    border-top: 120px solid white; 
+    border-right: 100vw solid transparent;
+}
+
+.titulo-habi {
+    width: 100%;
+    text-align: center;
+}
+
+.titulo-habi h2 {
+    font-size: 50px;
+    color: #4185d0;
+    margin: 0;
+}
+
+.titulo-habi p {
+    font-size: 20px;
+    color: #89898a;
+    margin: 0;
+}
+
+.habilidad {
+    background: white;
+    width: 200px;
+    height: 180px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px grey;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.base {
-    width: 49%;
-    box-shadow: 0 0 5px gray;
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 25px;
+.habi-img {
+    width: 70%;
 }
 
-.foto {
-    width: 50%;
-}
-
-.foto img{
-    width: 80%;
-    margin: 15px;
-    border: 1px solid rgb(112, 112, 112);
-    border-radius: 5px;
-}
-
-.texto {
-    width: 50%;
-}
-
-.texto a{
-    text-decoration: none;
-    color: black;
-}
-
-.texto h3 {
-    font-size: 25px;
-    margin-bottom: 5px;
-}
-
-.texto p {
-    margin-top: 0;
-    margin-right: 15px;
-    text-align: justify;
-}
-
-.habi {
-    width: 25%;
-    height: 160px;
-    box-shadow: 0 0 5px gray;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 15px 35px 15px;
-}
-
-.habi-foto {
-    width: 50%;
-}
-
-.habi-foto img {
+.habi-text {
     width: 100%;
-    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: #89898a;
+    margin: 0;
+    font-size: 20px;
 }
 
 .pie {
     height: 280px;
     overflow: hidden;
+    background: #eeeeee;
 }
 
 .footer {
@@ -492,25 +486,6 @@ body {
         margin-bottom: 5px;
     }
 
-    .texto {
-        width: 100%;
-    }
-
-    .texto h3 {
-        margin-top: 5px;
-        text-align: center;
-    }
-    
-    .texto p {
-        margin-left: 15px;
-    }
-
-    .habi {
-        width: 35%;
-        height: 150px;
-        margin-bottom: 34px;
-    }
-
 }
 
 @media screen and (max-width: 860px){
@@ -520,12 +495,6 @@ body {
 
     .barra {
         width: 90vw;
-    }
-
-    .habi {
-        width: 45%;
-        height: 150px;
-        margin-bottom: 34px;
     }
 
 }
@@ -542,17 +511,6 @@ body {
 
     .barra {
         width: 90vw;
-    }
-
-    .base {
-        width: 80%;
-        height: 400px;
-    }
-
-    .habi {
-        width: 55%;
-        height: 175px;
-        margin-bottom: 15px;
     }
 
     .contenedor {
@@ -587,6 +545,22 @@ body {
         color: white;
         font-size: 30px;
     }
+
+    .img-porta {
+        width: 80%;
+    }
+
+    .texto-porta {
+        width: 80%;
+    }
+
+    .swiper-button-next {
+        display: none;
+    }
+
+    .swiper-button-prev {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 706px){
@@ -600,10 +574,6 @@ body {
 @media screen and (max-width: 600px){
     .base {
         width: 100%;
-    }
-
-    .habi {
-        width: 70%;
     }
 
 }

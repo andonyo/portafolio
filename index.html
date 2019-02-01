@@ -4,12 +4,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Andony Orellana</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/swiper.min.css">
 </head>
 <body>
     <section class="portada">
@@ -19,15 +17,15 @@
                     <img src="img/logo.png" alt="Andony"/>
                 </figure>
                 <nav class="menur" id="menu" >
-                        <ul><li><a class="list" href="index.html">Inicio</a></li>
+                        <ul><li><a class="list" id="inici" href="#">Inicio</a></li>
                         <li><a class="list" id="habilida" href="#habil">Habilidades</a></li>
-                        <li><a class="list" id="proyec" href="#proyectos">Proyectos</a></li>
+                        <li><a class="list" id="proyec" href="#portafolio">Proyectos</a></li>
                         <li><a class="list" id="contacto" href="#">Contactame</a></li></ul>
                 </nav>
                 <nav class="menu" >
-                    <ul><li><a class="list" href="index.html">Inicio</a></li></ul>
+                    <ul><li><a class="list" id="inicio" href="#">Inicio</a></li></ul>
                     <ul><li><a class="list" id="habilidad" href="#habil">Habilidades</a></li></ul>
-                    <ul><li><a class="list" id="proyect" href="#proyectos">Proyectos</a></li></ul>
+                    <ul><li><a class="list" id="proyect" href="#portafolio">Proyectos</a></li></ul>
                     <ul><li><a class="list" id="contac" href="#">Contactame</a></li></ul>
                 </nav>
                 <div class="hambur"><a id="burguer-button"><i class="fas fa-bars"></i></a></div>
@@ -62,197 +60,181 @@
         </div>
         <div class="degrade"></div>
     </section>
+    
+    <section id="portafolio" class="portafolio">
+            <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="todo-porta">
+                                <div class="texto-porta">
+                                    <h3>Sistema de tickets IT</h3>
+                                    <p>Se creo para la empresa Santa teresita hotel y spa</p>
+                                    <ul>
+                                        <li><p>HTML 5</p></li>
+                                        <li><p>CSS 3</p></li>
+                                        <li><p>javascript</p></li>
+                                        <li><p>PHP</p></li>
+                                        <li><p>My sql</p></li>
+                                    </ul>
+                                    <p>Este programa fue creado con el fin de llevar mejor control en el seguimiento de problemas de usuario y asi mismo brindarle informacion al usuario de como va su requerimiento.</p>
+                                </div>
+                                <div class="img-porta">
+                                    <img src="img/st.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="todo-porta">
+                                <div class="texto-porta">
+                                    <h3>Sistema Contable</h3>
+                                    <p>Se creo para la clinica Don Meme</p>
+                                    <ul>
+                                        <li><p>HTML 5</p></li>
+                                        <li><p>CSS 3</p></li>
+                                        <li><p>javascript</p></li>
+                                        <li><p>PHP</p></li>
+                                        <li><p>My sql</p></li>
+                                    </ul>
+                                    <p>El principal objetivo es de llevar el control de compras y ventas de la organizacion asi mismo poder llevar un control de las transacciones hechas en el sistema.</p>
+                                </div>
+                                <div class="img-porta">
+                                    <img src="img/farma.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="todo-porta">
+                                <div class="texto-porta">
+                                    <h3>Control de horario</h3>
+                                    <p>Se creo para Clinica don Meme</p>
+                                    <ul>
+                                        <li><p>HTML 5</p></li>
+                                        <li><p>CSS 3</p></li>
+                                        <li><p>javascript</p></li>
+                                        <li><p>PHP</p></li>
+                                        <li><p>My sql</p></li>
+                                    </ul>
+                                    <p>Se creo para llevar el control de entrada y salida de los colaboradores y crear un reporte de horas de llegada y salida de cada uno en un determinado tiempo.</p>
+                                </div>
+                                <div class="img-porta">
+                                    <img src="img/time.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="todo-porta">
+                                <div class="texto-porta">
+                                    <h3>Invie</h3>
+                                    <p>Se creo para mejorar los conocimientos en HTML y CSS</p>
+                                    <ul>
+                                        <li><p>HTML 5</p></li>
+                                        <li><p>CSS 3</p></li>
+                                        <li><p>javascript</p></li>
+                                        <li><p>Responsive Desing</p></li>
+                                    </ul>
+                                    <p>Fue un proyecto en el curso de desarrollo web de platzi, el cual mejoro mi conocimiento en html y css dejandome buenas practicas en programacion.</p>
+                                </div>
+                                <div class="img-porta">
+                                    <img src="img/invie.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="todo-porta">
+                                <div class="texto-porta">
+                                    <h3>Blog de imagenes</h3>
+                                    <p>Se creo para mejorar los conocimientos en HTML y CSS</p>
+                                    <ul>
+                                        <li><p>HTML 5</p></li>
+                                        <li><p>CSS 3</p></li>
+                                        <li><p>Responsive Desing</p></li>
+                                    </ul>
+                                    <p>Fue un proyecto en el curso de desarrollo web de platzi, el cual tenia como objetivo aprender a utilizar grid layaut perfectamente.</p>
+                                </div>
+                                <div class="img-porta">
+                                    <img src="img/blog.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+    </section>
 
-    <section class="proyectos">
-        <div class="ambos">
-            <div class="proyec" id="proyectos">
-                <div class="titulo">
-                    <h2>Proyectos</h2>
-                    <div class="linea"></div>
-                </div>
-                <div class="proyects">
-                    <div class="base">
-                        <div class="foto">
-                            <img src="img/itst.png" alt="">
-                        </div>
-                        <div class="texto">
-                            <a href="#"><h3>Sistema de Tickets</h3></a>
-                            <p>Proyecto Realizado para la empresa Santa Teresita, con el fin de mejorar la revision de tickets en el departamento de it y mejorar el tiempo de respuesta en ellos.</p>
-                        </div>
-                    </div>
-                    <div class="base">
-                        <div class="foto">
-                            <img src="img/invie.png" alt="">
-                        </div>
-                        <div class="texto">
-                            <a href="pages/invie/index.html" target="_blank"><h3>Invie</h3></a>
-                            <p>Proyecto realizado con fines educativos para reforzar los conocimientos adquiridos en el area de desarrollo web, tanto de html, css, javascript y responsive.</p>
-                        </div>
-                    </div>
-                    <div class="base">
-                        <div class="foto">
-                            <img src="img/time.png" alt="">
-                        </div>
-                        <div class="texto">
-                            <a href="#"><h3>Control de Horarios</h3></a>
-                            <p>Proyecto realizado para la empresa Clinica Don Meme para llevar el control de horario de los trabajadores, asi como llevar un control de cuantas horas laboradas y horas de entrada y salida.</p>
-                        </div>
-                    </div>
-                    <div class="base">
-                        <div class="foto">
-                            <img src="img/farma.png" alt="">
-                        </div>
-                        <div class="texto">
-                            <a href="#"><h3>Sistema Contable</h3></a>
-                            <p>Proyecto realizado para la empresa Clinica Don Meme para llevar el control de ventas y compras asi como los inventarios y reportes de las transacciones hechas en el sistema.</p>
-                        </div>
-                    </div>
-                    <div class="base">
-                        <div class="foto">
-                            <img src="img/blog.png" alt="">
-                        </div>
-                        <div class="texto">
-                            <a href="pages/blog/index.html" target="_blank"><h3>Blog de imagenes</h3></a>
-                            <p>Proyecto realizado con fines educativos para reforzar los conocimientos adquiridos en el area de desarrollo web, mas concreto en grid layout.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="habilidad" id="habil">
-                <div class="titulo">
-                    <h2>Habilidades</h2>
-                    <div class="linea"></div>
-                </div>
-                <div class="proyects">
-                    <div class="habi">
-                        <div class="habi-foto">
-                            <img src="img/html.png" alt="">
-                        </div>
-                    </div>
-                    <div class="habi">
-                        <div class="habi-foto">
-                            <img src="img/css.png" alt="">
-                        </div>
-                    </div>
-                    <div class="habi">
-                        <div class="habi-foto">
-                            <img src="img/js.png" alt="">
-                        </div>
-                    </div>
-                    <div class="habi">
-                        <div class="habi-foto">
-                            <img src="img/jquery.png" alt="">
-                        </div>
-                    </div>
-                    <div class="habi">
-                        <div class="habi-foto">
-                            <img src="img/php.png" alt="">
-                        </div>
-                    </div>
-                    <div class="habi">
-                        <div class="habi-foto">
-                            <img src="img/mysql.png" alt="">
-                        </div>
-                    </div>
-                    <div class="habi">
-                        <div class="habi-foto">
-                            <img src="img/java.png" alt="">
-                        </div>
-                    </div>
-                    <div class="habi">
-                        <div class="habi-foto">
-                            <img src="img/git.png" alt="">
-                        </div>
-                    </div>
-                    <div class="habi">
-                        <div class="habi-foto">
-                            <img src="img/github.png" alt="">
-                        </div>
-                    </div>
-                    <div class="habi">
-                        <div class="habi-foto">
-                            <img src="img/ps.png" alt="">
-                        </div>
-                    </div>
-                    <div class="habi">
-                        <div class="habi-foto">
-                            <img src="img/office.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="habil" class="habilidades">
+        <div class="triangulo"></div>
+        <div class="titulo-habi">
+            <h2>Habilidades</h2>
+            <p>Con esto se crea la magia!</p>
+        </div>
+        <div class="habilidad">
+            <img class="habi-img" src="img/html.png" alt="">
+            <p class="habi-text" >HTML 5</p>
+        </div>
+        <div class="habilidad">
+            <img class="habi-img" src="img/css.png" alt="">
+            <p class="habi-text" >CSS 3</p>
+        </div>
+        <div class="habilidad">
+            <img class="habi-img" src="img/js.png" alt="">
+            <p class="habi-text" >JavaScript</p>
+        </div>
+        <div class="habilidad">
+            <img class="habi-img" src="img/jquery.png" alt="">
+            <p class="habi-text" >jquery</p>
+        </div>
+        <div class="habilidad">
+            <img class="habi-img" src="img/php.png" alt="">
+            <p class="habi-text" >PHP</p>
+        </div>
+        <div class="habilidad">
+            <img class="habi-img" src="img/mysql.png" alt="">
+            <p class="habi-text" >My sql</p>
+        </div>
+        <div class="habilidad">
+            <img class="habi-img" src="img/java.png" alt="">
+            <p class="habi-text" >java</p>
+        </div>
+        <div class="habilidad">
+            <img class="habi-img" src="img/git.png" alt="">
+            <p class="habi-text" >Git</p>
+        </div>
+        <div class="habilidad">
+            <img class="habi-img" src="img/github.png" alt="">
+            <p class="habi-text" >Github</p>
+        </div>
+        <div class="habilidad">
+            <img class="habi-img" src="img/ps.png" alt="">
+            <p class="habi-text" >Photoshop</p>
+        </div>
+        <div class="habilidad">
+            <img class="habi-img" src="img/office.png" alt="">
+            <p class="habi-text" >Office</p>
         </div>
     </section>
+
     <section class="pie">
         <footer class="footer">
             <p>Create Today, Change Tomorrow</p>
         </footer>
     </section>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/swiper.min.js" type="text/javascript"></script>
     <script>
-            var consulta = window.matchMedia('(max-width: 760px)');
-            consulta.addListener(mediaQuery);
-      
-            function mediaQuery(){
-              if (consulta.matches) {
-                console.log('si');
-                $burguerButton.addEventListener('touchstart', toggleMenu);
-      
-              }else{
-                console.log('no');
-                $burguerButton.removeEventListener('touchstart', toggleMenu);
-              }
-            }
-        
-            var $burguerButton = document.getElementById('burguer-button');
-            var $menu = document.getElementById('menu');
-            mediaQuery();
-      
-            function toggleMenu(){
-                  $menu.classList.toggle('active');
-                  console.log('hola')
-            };
-            const $proyectos = document.getElementById('proyectos')
-            const $habilidad = document.getElementById('habilidad')
-            const $proyect = document.getElementById('proyect')
-            const $habilida = document.getElementById('habilida')
-            const $proyec = document.getElementById('proyec')
-            const $contac = document.getElementById('contac')
-            const $contacto = document.getElementById('contacto')
-            const $yo = document.getElementById('yo')
-            const $laptop = document.getElementById('laptop')
-            const $iconos = document.getElementById('iconos')
-
-            $habilidad.addEventListener('click', (event) => {
-            $proyectos.classList.add('activo');
-            } )
-
-            $proyect.addEventListener('click', (event) => {
-            $proyectos.classList.remove('activo');
-            } )
-
-            $habilida.addEventListener('click', (event) => {
-            $proyectos.classList.add('activo');
-            $menu.classList.toggle('active');
-            } )
-
-            $proyec.addEventListener('click', (event) => {
-            $proyectos.classList.remove('activo');
-            $menu.classList.toggle('active');
-            } )
-
-            $contac.addEventListener('click', (event) => {
-            $yo.classList.add('activa');
-            $laptop.classList.add('no');
-            $iconos.classList.add('si');
-            } )
-
-            $contacto.addEventListener('click', (event) => {
-            $yo.classList.add('activa');
-            $laptop.classList.add('no');
-            $iconos.classList.add('si');
-            $menu.classList.toggle('active');
-            } )
-      
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
     </script>
+
 </body>
 </html>
